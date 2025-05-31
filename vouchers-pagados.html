@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vouchers Pagados</title>
+  <link rel="stylesheet" href="css/vouchers-pagados.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Vouchers Pagados</h1>
+    <table id="vouchers-table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Nombre</th>
+          <th>Correo</th>
+          <th>Monto</th>
+          <th>Método</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Los vouchers se cargarán dinámicamente aquí -->
+      </tbody>
+    </table>
+
+    <!-- Detalles del Voucher -->
+    <div id="voucher-details" class="hidden">
+      <h2>Detalles del Voucher</h2>
+      <p><strong>Nombre:</strong> <span id="detail-nombre"></span></p>
+      <p><strong>Correo:</strong> <span id="detail-email"></span></p>
+      <p><strong>Monto:</strong> $<span id="detail-monto"></span></p>
+      <p><strong>Método de Pago:</strong> <span id="detail-metodo"></span></p>
+      <p><strong>Fecha:</strong> <span id="detail-fecha"></span></p>
+      <button id="close-details" class="btn">Cerrar</button>
+    </div>
+  </div>
+  <script src="js/vouchers-pagados.js"></script>
+</body>
+</html>

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sección de Adopciones</title>
+  <link rel="stylesheet" href="css/adopciones.css">
+  <link rel="stylesheet" href="css/fontawesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="icon" href="img/image-removebg-preview.png" type="image/png">
+</head>
+<body>
+  <!-- header -->
+  <header class = "header bg-blue">
+    <nav class = "navbar bg-blue">
+        <div class = "container flex">
+            <a href="index.html" class="navbar-brand">
+                <img src="img/image-removebg-preview.png" alt="site logo">
+            </a>
+            <button type = "button" class = "navbar-show-btn">
+                <img src = "images/ham-menu-icon.png">
+            </button>
+
+            <div class = "navbar-collapse bg-white">
+                <button type = "button" class = "navbar-hide-btn">
+                    <img src = "images/close-icon.png">
+                </button>
+                <ul class = "navbar-nav">
+
+                    <li class = "nav-item">
+                        <a href = "servicio.html" class = "nav-link">Servicio</a>
+                    </li>
+                    <li class = "nav-item">
+                        <a href = "citas.html" class = "nav-link">Citas</a>
+                    </li>
+                    <li class = "nav-item">
+                        <a href = "adopciones.html" class = "nav-link">Adopciones</a>
+                    </li>
+                    <li class = "nav-item">
+                        <a href = "blog.html" class = "nav-link">Blog</a>
+                    </li>
+                
+                </ul>
+                <div class="search-bar">
+                    <form>
+                        <div class="search-bar-box flex">
+                            <span class="search-icon flex">
+                                <img src="images/search-icon-dark.png" alt="Search Icon">
+                            </span>
+                            <input type="search" id="search-input" class="search-control" placeholder="Search here">
+                        </div>
+                        <ul id="search-results" class="search-results"></ul>
+                    </form>
+                </div>
+            </div> 
+        </div>
+    </nav>
+
+    <div class = "header-inner text-white text-center">
+        <div class = "container grid">
+            <div class = "header-inner-left">
+                <h1>your most trusted<br> <span>health partner</span></h1>
+                <p class = "lead">the best match services for you</p>
+                <p class = "text text-md">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam, nulla odit esse necessitatibus corporis voluptatem?</p>
+                <div class = "btn-group">
+                    <a href = "registro-masco.html" class = "btn btn-white">Registar mascota</a>
+                    <a href = "cuenta.html" class = "btn btn-light-blue">Mi cuenta</a>
+                </div>
+            </div>
+            <div class = "header-inner-right">
+                <img src = "images/header.png">
+            </div>
+        </div>
+    </div>
+</header>
+<!-- end of header -->
+
+
+  <main>
+    <!-- Filtro de mascotas -->
+    <section id="adopciones-destacadas">
+        <h2 class="text-center">Todos estos animales en adopción necesitan una familia</h2>
+        <p class="text-center">Consulta la ficha de los animales en adopción para conocerlos mejor. También puedes: <a href="#" class="text-danger">Filtrar por Nombre o Texto</a></p>
+        
+        <!-- Filtros -->
+        <form id="filtro-form" class="filtros flex justify-center">
+            <select id="especie">
+              <option value="">Todos los animales</option>
+              <option value="perro">Perros</option>
+              <option value="gato">Gatos</option>
+            </select>
+            <select id="edad">
+              <option value="">Todas las edades</option>
+              <option value="Cachorro">Cachorros</option>
+              <option value="Adulto">Adultos</option>
+            </select>
+            <select id="sexo">
+              <option value="">Todos los sexos</option>
+              <option value="Macho">Macho</option>
+              <option value="Hembra">Hembra</option>
+            </select>
+            <select id="region">
+              <option value="">Todas las regiones</option>
+              <option value="Región 1">Región 1</option>
+              <option value="Región 2">Región 2</option>
+            </select>
+          </form>
+
+      
+        <p class="text-center mt-md">693 Resultados <a href="#" class="text-danger">Añadir alerta</a></p>
+      
+        <div id="mascotas-destacadas" class="mascotas-grid">
+          <a href="detalle-animal.html"><div  class="mascota-card">
+            <img  src="img/image.png" alt="Perro Libertad">
+            <h3>Perro Libertad</h3>
+            <p>Te enamorarás al verla</p>
+            <span>2 May '25</span>
+          </div></a>
+          <a href="detalle-animal.html"><div  class="mascota-card">
+            <img  src="img/image.png" alt="Perro Libertad">
+            <h3>Perro Libertad</h3>
+            <p>Te enamorarás al verla</p>
+            <span>2 May '25</span>
+          </div></a>
+          <a href="detalle-animal.html"><div  class="mascota-card">
+            <img  src="img/image.png" alt="Perro Libertad">
+            <h3>Perro Libertad</h3>
+            <p>Te enamorarás al verla</p>
+            <span>2 May '25</span>
+          </div></a>
+          <a href="detalle-animal.html"><div  class="mascota-card">
+            <img  src="img/image.png" alt="Perro Libertad">
+            <h3>Perro Libertad</h3>
+            <p>Te enamorarás al verla</p>
+            <span>2 May '25</span>
+          </div></a>
+        </div>
+
+        <div id="mascotas-destacadas" class="mascotas-grid">
+            <a href="detalle-animal.html"><div  class="mascota-card">
+                <img  src="img/image.png" alt="Perro Libertad">
+                <h3>Perro Libertad</h3>
+                <p>Te enamorarás al verla</p>
+                <span>2 May '25</span>
+              </div></a>
+              <a href="detalle-animal.html"><div  class="mascota-card">
+                <img  src="img/image.png" alt="Perro Libertad">
+                <h3>Perro Libertad</h3>
+                <p>Te enamorarás al verla</p>
+                <span>2 May '25</span>
+              </div></a>
+              <a href="detalle-animal.html"><div  class="mascota-card">
+                <img  src="img/image.png" alt="Perro Libertad">
+                <h3>Perro Libertad</h3>
+                <p>Te enamorarás al verla</p>
+                <span>2 May '25</span>
+              </div></a>
+              <a href="detalle-animal.html"><div  class="mascota-card">
+                <img  src="img/image.png" alt="Perro Libertad">
+                <h3>Perro Libertad</h3>
+                <p>Te enamorarás al verla</p>
+                <span>2 May '25</span>
+              </div></a>
+          </div>
+
+          <div id="mascotas-destacadas" class="mascotas-grid">
+            <a href="detalle-animal.html"><div  class="mascota-card">
+                <img  src="img/image.png" alt="Perro Libertad">
+                <h3>Perro Libertad</h3>
+                <p>Te enamorarás al verla</p>
+                <span>2 May '25</span>
+              </div></a>
+              <a href="detalle-animal.html"><div  class="mascota-card">
+                <img  src="img/image.png" alt="Perro Libertad">
+                <h3>Perro Libertad</h3>
+                <p>Te enamorarás al verla</p>
+                <span>2 May '25</span>
+              </div></a>
+            </div>
+            <a href="detalle-animal.html"><div  class="mascota-card">
+                <img  src="img/image.png" alt="Perro Libertad">
+                <h3>Perro Libertad</h3>
+                <p>Te enamorarás al verla</p>
+                <span>2 May '25</span>
+              </div></a>
+              <a href="detalle-animal.html"><div  class="mascota-card">
+                <img  src="img/image.png" alt="Perro Libertad">
+                <h3>Perro Libertad</h3>
+                <p>Te enamorarás al verla</p>
+                <span>2 May '25</span>
+              </div></a>
+          </div>
+
+          <div id="mascotas-destacadas" class="mascotas-grid">
+            <a href="detalle-animal.html"><div  class="mascota-card">
+                <img  src="img/image.png" alt="Perro Libertad">
+                <h3>Perro Libertad</h3>
+                <p>Te enamorarás al verla</p>
+                <span>2 May '25</span>
+              </div></a>
+              <a href="detalle-animal.html"><div  class="mascota-card">
+                <img  src="img/image.png" alt="Perro Libertad">
+                <h3>Perro Libertad</h3>
+                <p>Te enamorarás al verla</p>
+                <span>2 May '25</span>
+              </div></a>
+              <a href="detalle-animal.html"><div  class="mascota-card">
+                <img  src="img/image.png" alt="Perro Libertad">
+                <h3>Perro Libertad</h3>
+                <p>Te enamorarás al verla</p>
+                <span>2 May '25</span>
+              </div></a>
+              <a href="detalle-animal.html"><div  class="mascota-card">
+                <img  src="img/image.png" alt="Perro Libertad">
+                <h3>Perro Libertad</h3>
+                <p>Te enamorarás al verla</p>
+                <span>2 May '25</span>
+              </div></a>
+          </div>
+
+
+        
+
+  <!-- footer  -->
+  <footer id = "footer" class = "footer text-center">
+    <div class = "container">
+        <div class = "footer-inner text-white py grid">
+            <div class = "footer-item">
+                <h3 class = "footer-head">about us</h3>
+                <div class = "icon">
+                    <img src = "img/image-removebg-preview.png">
+                </div>
+                <p class = "text text-md">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis saepe incidunt fugiat optio corporis ea!</p>
+                <address>
+                    Medic Clinic <br>
+                    69 Deerpark Rd, Mount Merrion <br>
+                    Co. Dublin, A94 E9D3 <br>
+                    Ireland
+                </address>
+            </div>
+
+            <div class = "footer-item">
+                <h3 class = "footer-head">tags</h3>
+                <ul class = "tags-list flex">
+                    <li>medical care</li>
+                    <li>emergency</li>
+                    <li>therapy</li>
+                    <li>surgery</li>
+                    <li>medication</li>
+                    <li>nurse</li>
+                </ul>
+            </div>
+
+            <div class = "footer-item">
+                <h3 class = "footer-head">Quick Links</h3>
+                <ul>
+                    <li><a href = "#" class = "text-white">Our Services</a></li>
+                    <li><a href = "#" class = "text-white">Our Plan</a></li>
+                    <li><a href = "#" class = "text-white">Privacy Policy</a></li>
+                    <li><a href = "#" class = "text-white">Appointment Schedule</a></li>
+                </ul>
+            </div>
+
+            <div class = "footer-item">
+                <h3 class = "footer-head">make an appointment</h3>
+                <p class = "text text-md">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, omnis.</p>
+                <ul class = "appointment-info">
+                    <li>8:00 AM - 11:00 AM</li>
+                    <li>2:00 PM - 05:00 PM</li>
+                    <li>8:00 PM - 11:00 PM</li>
+                    <li>
+                        <i class = "fas fa-envelope"></i>
+                        <span>revomedic@gmail.com</span>
+                    </li>
+                    <li>
+                        <i class = "fas fa-phone"></i>
+                        <span>+003 478 2834(00)</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class = "footer-links">
+            <ul class = "flex">
+                <li><a href = "https://www.facebook.com/share/1Y7RTmTA4f/" class = "text-white flex"> <i class = "fab fa-facebook-f"></i></a></li>
+                <li><a href = "https://www.instagram.com/happydog.arequipa?igsh=MWV5aW1kamNqZGppNQ==" class = "text-white flex"> <i class = "fab fa-twitter"></i></a></li>
+                <li><a href = "#" class = "text-white flex"> <i class = "fab fa-linkedin"></i></a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+<!-- end of footer  -->
+
+  <script src="adopciones.js"></script>
+  <script src = "js/script.js"></script>
+</body>
+</html>
